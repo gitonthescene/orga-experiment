@@ -1,0 +1,11 @@
+main.js is built from a npm project using [[https://webpack.js.org/][webpack]]
+
+The npm project contains only the [[https://github.com/orgapp/orgajs][orga package]] and a file that looks like the following:
+
+#+BEGIN_SRC
+"use strict";
+const orgaModule = require("orga");
+global.parse = orgaModule.parse;
+#+END_SRC
+
+Webpack was run without configuration.
